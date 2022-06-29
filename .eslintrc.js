@@ -27,6 +27,8 @@ module.exports = {
     "react/prop-types": "off",
     "react/self-closing-comp": "error",
     "react-hooks/rules-of-hooks": "error",
+    "jsx-a11y/href-no-hash": ["off"],
+    "react/jsx-filename-extension": ["warn", { extensions: [".js", ".jsx"] }],
     "react-hooks/exhaustive-deps": [
       "warn",
       {

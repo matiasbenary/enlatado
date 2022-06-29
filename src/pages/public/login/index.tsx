@@ -1,3 +1,4 @@
+import { apiCall } from "@/services/apiHandler";
 import {
   Flex,
   Box,
@@ -14,6 +15,18 @@ import {
 } from "@chakra-ui/react";
 
 const Login = () => {
+  const handleClick = async () => {
+    const response = await apiCall(
+      "login",
+      { email: "matiasbenary@gmail.com", password: "mbenary123" },
+      "POST"
+    );
+    console.log(response);
+  };
+
+  // const handleClick = () => {
+  //   console.log("go");
+  // };
   return (
     <Flex
       minH={"100vh"}
@@ -58,6 +71,7 @@ const Login = () => {
                 _hover={{
                   bg: "blue.500",
                 }}
+                onClick={handleClick}
               >
                 Sign in
               </Button>

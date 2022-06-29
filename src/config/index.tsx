@@ -1,7 +1,7 @@
 import Fonselp from "./226/226";
 
 const config = () => {
-  const entityConfig = import.meta.env.REACT_APP_ID_ENTITY;
+  const entityConfig = import.meta.env.VITE_APP_ID_ENTITY;
 
   const base = Fonselp;
 
